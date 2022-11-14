@@ -1,6 +1,11 @@
 {
   "name": "@yapyeeqiang/react-validator",
   "version": "0.2.0",
+  "description": "React custom form components and validation",
+  "author": "yapyeeqiang",
+  "license": "Apache-2.0",
+  "repository": "yapyeeqiang/react-validator",
+  "main": "dist/index.js",
   "dependencies": {
     "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,8 +22,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "rollup -c -w",
+    "build": "rollup -c",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
