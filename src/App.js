@@ -3,7 +3,6 @@ import FormField from "./components/form/FormField";
 import * as Yup from "yup";
 import { useValidation } from "./hooks/validation";
 
-// 1
 const schema = Yup.object({
   email: Yup.string().email().required(),
   password: Yup.string()
@@ -17,14 +16,11 @@ const schema = Yup.object({
 });
 
 function App() {
-  // 2
   const { useField, validateForm, errors, fields } = useValidation(schema);
 
-  // 3
   const { emailField, setEmailField } = useField("email");
   const { passwordField, setPasswordField } = useField("password");
 
-  // 4
   const submitForm = () => {
     const isFormValid = validateForm();
 
