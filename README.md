@@ -13,6 +13,8 @@ const schema = Yup.object({
 });
 ```
 
+<br>
+
 2. Initialize the useValidation hook
 
 ```js
@@ -28,12 +30,16 @@ Definitions:
 - `useField` - Method that defines a form field
 - `validateForm` - Method that checks if validation passed
 
+<br>
+
 3. Define form fields
 
 ```js
 // Format: <KEY>field, set<KEY>Field = useField("<KEY>")
 const { emailField, setEmailField } = useField("email");
 ```
+
+<br>
 
 4. Define custom form submit action
 
@@ -46,6 +52,8 @@ const submitForm = () => {
   }
 };
 ```
+
+<br>
 
 5. Use custom FormField component
 
